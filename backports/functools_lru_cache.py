@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+
 from collections import namedtuple
 from functools import update_wrapper
 from threading import RLock
