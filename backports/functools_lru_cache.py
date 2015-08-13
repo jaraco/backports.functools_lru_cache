@@ -1,10 +1,26 @@
 from __future__ import absolute_import
 
+import functools
 from collections import namedtuple
-from functools import update_wrapper
 from threading import RLock
 
 _CacheInfo = namedtuple("CacheInfo", ["hits", "misses", "maxsize", "currsize"])
+
+
+@functools.wraps(functools.update_wrapper)
+def update_wrapper(wrapper,
+                   wrapped,
+                   assigned = functools.WRAPPER_ASSIGNMENTS,
+                   updated = functools.WRAPPER_UPDATES):
+    """
+    Patch two bugs in functools.update_wrapper.
+    """
+    # workaround for http://bugs.python.org/issue3445
+    assigned = tuple(attr for attr in assigned if hasattr(wrapped, attr))
+    wrapper = functools.update_wrapper(wrapper, wrapped, assigned, updated)
+    # workaround for https://bugs.python.org/issue17482
+    wrapper.__wrapped__ = wrapped
+    return wrapper
 
 
 class _HashedSeq(list):
