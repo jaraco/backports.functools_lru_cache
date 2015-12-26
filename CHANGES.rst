@@ -1,3 +1,8 @@
+1.2
+===
+
+Issue #5: Added a minimal test suite.
+
 1.1
 ===
 
