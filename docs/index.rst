@@ -1,4 +1,4 @@
-Welcome to skeleton documentation!
+Welcome to backports.functools_lru_cache documentation!
 ========================================
 
 .. toctree::
@@ -7,7 +7,7 @@ Welcome to skeleton documentation!
    history
 
 
-.. automodule:: skeleton
+.. automodule:: backports.functools_lru_cache
     :members:
     :undoc-members:
     :show-inheritance:
