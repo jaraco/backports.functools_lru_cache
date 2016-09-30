@@ -1,8 +1,22 @@
 sudo: false
 language: python
 python:
- - 2.7
- - 3.5
+- 2.7
+- 3.5
+install:
+- pip install tox
 script:
- - pip install -U pytest
- - python setup.py test
+- tox
+branches:
+  except:
+  - skeleton
+deploy:
+  provider: pypi
+  server: https://upload.pypi.org/legacy/
+  on:
+    tags: true
+    all_branches: true
+    python: 3.5
+  user: jaraco
+  # supply password with `travis encrypt --add deploy.password`
+  distributions: dists
