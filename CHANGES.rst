@@ -1,3 +1,9 @@
+1.3
+===
+
+Tagged commits are automatically released following passing
+tests.
+
 1.2
 ===
 
