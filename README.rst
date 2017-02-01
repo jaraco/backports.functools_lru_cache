@@ -8,6 +8,10 @@
 .. image:: https://img.shields.io/travis/jaraco/backports.functools_lru_cache/master.svg
    :target: http://travis-ci.org/jaraco/backports.functools_lru_cache
 
+
+License
+=======
+
 License is indicated in the project metadata (typically one or more
 of the Trove classifiers). For more details, see `this explanation
 <https://github.com/jaraco/skeleton/issues/1>`_.
