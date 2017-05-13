@@ -1,3 +1,9 @@
+1.4
+===
+
+#9: Updated namespace package to use pkgutil for declaring the
+namespace.
+
 1.3
 ===
 
