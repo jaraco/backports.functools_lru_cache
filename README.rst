@@ -4,10 +4,10 @@
 .. image:: https://img.shields.io/pypi/pyversions/backports.functools_lru_cache.svg
 
 .. image:: https://img.shields.io/travis/jaraco/backports.functools_lru_cache/master.svg
-   :target: http://travis-ci.org/jaraco/backports.functools_lru_cache
+   :target: https://travis-ci.org/jaraco/backports.functools_lru_cache
 
-License
-=======
+.. .. image:: https://readthedocs.org/projects/backportsfunctools_lru_cache/badge/?version=latest
+..    :target: https://backportsfunctools_lru_cache.readthedocs.io/en/latest/?badge=latest
 
 Backport of functools.lru_cache from Python 3.3 as published at `ActiveState
 <http://code.activestate.com/recipes/578078/>`_.
