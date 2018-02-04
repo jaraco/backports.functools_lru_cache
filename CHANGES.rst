@@ -1,3 +1,9 @@
+1.5
+===
+
+Refresh package metadata including publishing license with the
+wheel (#11).
+
 1.4
 ===
 
