@@ -1,3 +1,10 @@
+v1.6.0
+======
+
+Refresh package metadata.
+Use black for code style.
+Enroll with Tidelift.
+
 1.5
 ===
 
