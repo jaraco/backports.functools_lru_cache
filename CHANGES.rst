@@ -1,3 +1,8 @@
+v1.6.1
+======
+
+Publish release notes on readthedocs.
+
 v1.6.0
 ======
 
