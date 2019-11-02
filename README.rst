@@ -16,6 +16,9 @@
 .. .. image:: https://readthedocs.org/projects/backportsfunctools_lru_cache/badge/?version=latest
 ..    :target: https://backportsfunctools_lru_cache.readthedocs.io/en/latest/?badge=latest
 
+.. image:: https://tidelift.com/badges/package/pypi/backports.functools_lru_cache
+   :target: https://tidelift.com/subscription/pkg/pypi-backports.functools_lru_cache?utm_source=pypi-backports.functools_lru_cache&utm_medium=readme
+
 Backport of functools.lru_cache from Python 3.3 as published at `ActiveState
 <http://code.activestate.com/recipes/578078/>`_.
 
@@ -28,3 +31,11 @@ Consider using this technique for importing the 'lru_cache' function::
         from functools import lru_cache
     except ImportError:
         from backports.functools_lru_cache import lru_cache
+
+
+Security Contact
+================
+
+To report a security vulnerability, please use the
+`Tidelift security contact <https://tidelift.com/security>`_.
+Tidelift will coordinate the fix and disclosure.
