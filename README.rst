@@ -13,8 +13,8 @@
 .. .. image:: https://img.shields.io/appveyor/ci/jaraco/skeleton/master.svg
 ..    :target: https://ci.appveyor.com/project/jaraco/skeleton/branch/master
 
-.. .. image:: https://readthedocs.org/projects/backportsfunctools_lru_cache/badge/?version=latest
-..    :target: https://backportsfunctools_lru_cache.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/backportsfunctools_lru_cache/badge/?version=latest
+   :target: https://backportsfunctools_lru_cache.readthedocs.io/en/latest/?badge=latest
 
 .. image:: https://tidelift.com/badges/package/pypi/backports.functools_lru_cache
    :target: https://tidelift.com/subscription/pkg/pypi-backports.functools_lru_cache?utm_source=pypi-backports.functools_lru_cache&utm_medium=readme
