@@ -136,7 +136,7 @@ def lru_cache(maxsize=100, typed=False):
                     if link is not None:
                         # record recent use of the key by moving it
                         # to the front of the list
-                        root, = nonlocal_root
+                        (root,) = nonlocal_root
                         link_prev, link_next, key, result = link
                         link_prev[NEXT] = link_next
                         link_next[PREV] = link_prev
@@ -148,7 +148,7 @@ def lru_cache(maxsize=100, typed=False):
                         return result
                 result = user_function(*args, **kwds)
                 with lock:
-                    root, = nonlocal_root
+                    (root,) = nonlocal_root
                     if key in cache:
                         # getting here means that this same key was added to the
                         # cache while the lock was released.  since the link
