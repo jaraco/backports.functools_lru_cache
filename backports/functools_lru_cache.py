@@ -63,7 +63,7 @@ def _make_key(
     return _HashedSeq(key)
 
 
-def lru_cache(maxsize=100, typed=False):
+def lru_cache(maxsize=100, typed=False):  # noqa: C901
     """Least-recently-used cache decorator.
 
     If *maxsize* is set to None, the LRU features are disabled and the cache
