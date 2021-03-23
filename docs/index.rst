@@ -1,5 +1,5 @@
-Welcome to backports.functools_lru_cache documentation!
-============================================
+Welcome to |project| documentation!
+===================================
 
 .. toctree::
    :maxdepth: 1

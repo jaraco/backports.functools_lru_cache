@@ -6,9 +6,9 @@
 
 .. _PyPI link: https://pypi.org/project/backports.functools_lru_cache
 
-.. image:: https://github.com/jaraco/backports.functools_lru_cache/workflows/Automated%20Tests/badge.svg
-   :target: https://github.com/jaraco/backports.functools_lru_cache/actions?query=workflow%3A%22Automated+Tests%22
-   :alt: Automated Tests
+.. image:: https://github.com/jaraco/backports.functools_lru_cache/workflows/tests/badge.svg
+   :target: https://github.com/jaraco/backports.functools_lru_cache/actions?query=workflow%3A%22tests%22
+   :alt: tests
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/psf/black
