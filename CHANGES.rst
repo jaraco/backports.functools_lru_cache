@@ -1,3 +1,8 @@
+v1.6.3
+======
+
+#15: Restore universal wheel.
+
 v1.6.2
 ======
 
