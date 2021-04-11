@@ -1,3 +1,10 @@
+v1.6.4
+======
+
+#16: For test dependencies, when indicating Python 3, use ``>=3``
+instead of ``>3`` to satisfy
+`python-poetry/poetry#3862 <https://github.com/python-poetry/poetry/issues/3862>`_.
+
 v1.6.3
 ======
 
