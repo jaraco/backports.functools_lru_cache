@@ -19,13 +19,18 @@ link_files = {
             ),
             dict(
                 pattern=r'PEP[- ](?P<pep_number>\d+)',
-                url='https://www.python.org/dev/peps/pep-{pep_number:0>4}/',
+                url='https://peps.python.org/pep-{pep_number:0>4}/',
             ),
         ],
     )
 }
 
-# Custom sidebar templates, maps document names to template names.
-html_theme = 'alabaster'
-templates_path = ['_templates']
-html_sidebars = {'index': ['tidelift-sidebar.html']}
+# Be strict about any broken references:
+nitpicky = True
+
+# Include Python intersphinx mapping to prevent failures
+# jaraco/skeleton#51
+extensions += ['sphinx.ext.intersphinx']
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+}
