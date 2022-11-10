@@ -1,10 +1,7 @@
 .. image:: https://img.shields.io/pypi/v/backports.functools_lru_cache.svg
-   :target: `PyPI link`_
+   :target: https://pypi.org/project/backports.functools_lru_cache
 
 .. image:: https://img.shields.io/pypi/pyversions/backports.functools_lru_cache.svg
-   :target: `PyPI link`_
-
-.. _PyPI link: https://pypi.org/project/backports.functools_lru_cache
 
 .. image:: https://github.com/jaraco/backports.functools_lru_cache/workflows/tests/badge.svg
    :target: https://github.com/jaraco/backports.functools_lru_cache/actions?query=workflow%3A%22tests%22
