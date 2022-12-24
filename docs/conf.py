@@ -40,3 +40,5 @@ intersphinx_mapping = {
 
 # Preserve authored syntax for defaults
 autodoc_preserve_defaults = True
+
+extensions += ['jaraco.tidelift']
