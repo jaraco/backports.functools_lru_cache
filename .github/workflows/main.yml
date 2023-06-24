@@ -42,9 +42,7 @@ jobs:
     strategy:
       matrix:
         python:
-        - 2.7
-        - 3.6
-        - "3.7"
+        - "3.8"
         - "3.11"
         - "3.12"
         platform:
