@@ -1,3 +1,12 @@
+v1.6.6
+======
+
+Bugfixes
+--------
+
+- Restored install compatibilty on Python 2. (#20)
+
+
 v1.6.5
 ======
 
