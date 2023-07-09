@@ -1,0 +1,1 @@
+Restored install compatibilty on Python 2.
