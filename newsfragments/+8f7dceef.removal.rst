@@ -1,0 +1,1 @@
+Drop support for Python 2 and require Python 3.8 or later. In most cases, users should rely on the 1.x releases for an implementation that runs on older Pythons. This 2.0 series provides minimal value for users of Python 3.3 and later except to provide packaging updates and possibly preview access to functionality on later Python versions.
