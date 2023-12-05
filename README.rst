@@ -3,7 +3,7 @@
 
 .. image:: https://img.shields.io/pypi/pyversions/backports.functools_lru_cache.svg
 
-.. image:: https://github.com/jaraco/backports.functools_lru_cache/workflows/tests/badge.svg
+.. image:: https://github.com/jaraco/backports.functools_lru_cache/actions/workflows/main.yml/badge.svg
    :target: https://github.com/jaraco/backports.functools_lru_cache/actions?query=workflow%3A%22tests%22
    :alt: tests
 
