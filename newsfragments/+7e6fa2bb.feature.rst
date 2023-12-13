@@ -1,1 +1,0 @@
-Refreshed implementation from CPython.
