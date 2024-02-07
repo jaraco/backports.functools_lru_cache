@@ -14,7 +14,7 @@
 .. image:: https://readthedocs.org/projects/backportsfunctools_lru_cache/badge/?version=latest
    :target: https://backportsfunctools_lru_cache.readthedocs.io/en/latest/?badge=latest
 
-.. image:: https://img.shields.io/badge/skeleton-2023-informational
+.. image:: https://img.shields.io/badge/skeleton-2024-informational
    :target: https://blog.jaraco.com/skeleton
 
 .. image:: https://tidelift.com/badges/package/pypi/backports.functools_lru_cache
