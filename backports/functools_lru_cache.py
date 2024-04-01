@@ -127,7 +127,7 @@ def lru_cache(maxsize=128, typed=False):
     return decorating_function
 
 
-def _lru_cache_wrapper(user_function, maxsize, typed, _CacheInfo):
+def _lru_cache_wrapper(user_function, maxsize, typed, _CacheInfo):  # noqa: C901
     # Constants shared by all lru cache instances:
     sentinel = object()  # unique object used to signal cache misses
     make_key = _make_key  # build a key from the function arguments
