@@ -23,10 +23,10 @@ dependencies = []
 dynamic = ["version"]
 
 [project.urls]
-Homepage = "https://github.com/jaraco/backports.functools_lru_cache"
+Source = "https://github.com/jaraco/backports.functools_lru_cache"
 
 [project.optional-dependencies]
-testing = [
+test = [
 	# upstream
 	"pytest >= 6, != 8.1.*",
 	"pytest-checkdocs >= 2.4",
@@ -37,7 +37,7 @@ testing = [
 
 	# local
 ]
-docs = [
+doc = [
 	# upstream
 	"sphinx >= 3.5",
 	"jaraco.packaging >= 9.3",
