@@ -22,7 +22,7 @@ classifiers = [
 	"Intended Audience :: Developers",
 	"Programming Language :: Python :: 3",
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "MIT"
 dependencies = [
 ]
@@ -54,7 +54,7 @@ doc = [
 ]
 
 check = [
-	"pytest-checkdocs >= 2.4",
+	"pytest-checkdocs >= 2.14",
 	"pytest-ruff >= 0.2.1; sys_platform != 'cygwin'",
 ]
 
@@ -63,12 +63,14 @@ cover = [
 ]
 
 enabler = [
-	"pytest-enabler >= 2.2",
+	"pytest-enabler >= 3.4",
 ]
 
 type = [
 	# upstream
-	"pytest-mypy",
+	
+    # Exclude PyPy from type checks (python/mypy#20454 jaraco/skeleton#187)
+	"pytest-mypy >= 1.0.1; platform_python_implementation != 'PyPy'",
 
 	# local
 ]
