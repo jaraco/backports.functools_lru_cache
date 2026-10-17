@@ -1,10 +1,10 @@
-from __future__ import absolute_import
-
 import functools
 from collections import namedtuple
 from threading import RLock
 
-_CacheInfo = namedtuple("_CacheInfo", ["hits", "misses", "maxsize", "currsize"])
+_CacheInfo = namedtuple(  # noqa: PYI024 # matches CPython functools
+    "_CacheInfo", ["hits", "misses", "maxsize", "currsize"]
+)
 
 
 @functools.wraps(functools.update_wrapper)
@@ -32,7 +32,7 @@ class _HashedSeq(list):
 
     """
 
-    __slots__ = 'hashvalue'
+    __slots__ = ('hashvalue',)
 
     def __init__(self, tup, hash=hash):
         self[:] = tup
@@ -47,7 +47,7 @@ def _make_key(
     kwds,
     typed,
     kwd_mark=(object(),),
-    fasttypes={int, str},
+    fasttypes={int, str},  # noqa: B006 # never mutated; bound locally for speed
     tuple=tuple,
     type=type,
     len=len,
@@ -108,8 +108,7 @@ def lru_cache(maxsize=128, typed=False):
 
     if isinstance(maxsize, int):
         # Negative maxsize is treated as 0
-        if maxsize < 0:
-            maxsize = 0
+        maxsize = max(maxsize, 0)
     elif callable(maxsize) and isinstance(typed, bool):
         # The user_function was passed in directly via the maxsize argument
         user_function, maxsize = maxsize, 128
